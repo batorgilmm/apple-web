@@ -10,7 +10,7 @@
     <nav>
       <img src="./assets/icons/logo.svg" />
       <ul>
-        <li><a href="">Store</a></li>
+        <li><a href="/store.html">Store</a></li>
         <li><a href="">Mac</a></li>
         <li><a href="">Ipad</a></li>
         <li><a href="">Iphone</a></li>
@@ -32,11 +32,17 @@
     </div>
 
     <section class="main-product">
-      <img src="./assets/home/main.png" />
+      <picture>
+        <source media="(max-width:390px)" srcset="./assets/home/main-sm.png" />
+
+        <source media="(max-width:768px)" srcset="./assets/home/main-md.png" />
+
+        <img src="./assets/home/main.png" />
+      </picture>
 
       <div>
         <h1>Iphone 16 Pro</h1>
-        <p>Hello, Apple Intelligence.</p>
+        <p>Hello, Apple Intelligence.</p>
         <div>
           <button class="button--primary">Learn more</button>
           <button class="button--primary-outline">Buy</button>
@@ -46,15 +52,59 @@
 
     <section class="main-product">
       <img src="./assets/home/main-2.png" />
-
       <div>
         <h1>Iphone 16</h1>
-        <p>Hello, Apple Intelligence.</p>
+        <p>Hello, Apple Intelligence.</p>
         <div>
           <button class="button--secondary">Learn more</button>
           <button class="button--secondary-outline">Buy</button>
         </div>
       </div>
+    </section>
+
+    <section class="products">
+      <div class="products-row">
+        <div class="products-item">
+          <img src="./assets/home/product-card-1.png" />
+          <div class="product-card-content">
+            <div>
+              <p>Two sizes. Faster chip. Does it all.</p>
+
+              <div>
+                <button class="button--primary">Learn more</button>
+                <button class="button--primary-outline">Buy</button>
+              </div>
+            </div>
+
+            <p class="text-gradient">Hello, Apple Intelligence.</p>
+          </div>
+        </div>
+        <div class="products-item">
+          <img src="./assets/home/product-card-2.png" />
+          <div class="product-card-content">
+            <div>
+              <p>Two sizes. Faster chip. Does it all.</p>
+
+              <div>
+                <button class="button--primary">Learn more</button>
+                <button class="button--primary-outline">Buy</button>
+              </div>
+            </div>
+
+            <p class="text-gradient">Hello, Apple Intelligence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apple-tv">
+      <div class="gallery"></div>
+      <div class="gallery"></div>
+      <div class="gallery"></div>
+      <div class="gallery"></div>
+      <div class="gallery"></div>
+      <div class="gallery"></div>
+      <div class="gallery"></div>
     </section>
   </body>
 </html>
