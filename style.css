@@ -36,6 +36,14 @@ button {
   padding: 0;
 }
 
+.navbar-bg {
+  width: 100%;
+  height: 44px;
+  background: #fff;
+  position: relative;
+  z-index: 5;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -66,8 +74,10 @@ a {
 
 .sub-head {
   padding: 16px 0;
-  margin-top: 44px;
   text-align: center;
+  background: #fff;
+  position: relative;
+  z-index: 10;
 }
 
 .sub-head a {
@@ -171,6 +181,60 @@ a {
   min-width: 1250px;
   height: 667px;
   background-color: crimson;
+}
+
+.gradient {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.gradient :nth-child(1) {
+  width: 60vw;
+  height: 20px;
+  top: -30px;
+  left: 0;
+  background: #4186fd;
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+}
+
+.gradient :nth-child(2) {
+  width: 30vw;
+  height: 50px;
+  background: #e9a5ff;
+  top: -60px;
+  left: -25%;
+  right: 0;
+  margin: 0 auto;
+  filter: blur(20px);
+  border-radius: 50%;
+  position: absolute;
+}
+.gradient :nth-child(3) {
+  width: 40vw;
+  height: 150px;
+  background: #ff3f98;
+  top: -160px;
+  left: 0;
+  right: -20vw;
+  margin: 0 auto;
+  filter: blur(20px);
+  border-radius: 50%;
+  position: absolute;
+}
+.gradient :nth-child(4) {
+  width: 40vw;
+  height: 50px;
+  background: #fd8c1f;
+  top: -55px;
+  border-radius: 50%;
+  right: 0vw;
+  filter: blur(20px);
+  position: absolute;
 }
 
 @media only screen and (max-width: 768px) {
